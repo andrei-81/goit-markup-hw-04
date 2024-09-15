@@ -156,12 +156,16 @@ img {
     display: flex; 
     flex-direction: column;
     align-items: center;
-    background-color: #2E2F42;
     color: #FFFFFF;
 }
 
 .service-section {
     padding: 188px 0;
+    background-image:linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+    url("../images/people-office.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 
 
@@ -243,6 +247,7 @@ img {
     line-height: 1.2;
     letter-spacing: 0.02em;
     margin-bottom: 8px; 
+    margin-top: 12px;
 }
 
 .about-us-text{
@@ -251,8 +256,6 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
-
-
 
 .team {
     flex-direction: column;
@@ -384,8 +387,11 @@ img {
 }
 
 .our-footer {
+    display: flex;
     background-color: #2E2F42;
     padding: 100px 0;
+    align-items:start;
+
 }
 
 .webspan-footer {
@@ -415,13 +421,69 @@ img {
     max-width: 264px;
 }
 
+.icon-container {
+    background-color: #F4F4FD;
+    border-color: #8E8F99;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    height: 112px;
+}
+
 .icon {
-    fill: #2a2a2a;
-    background-color: #03a9f4;
     width: 64px;
-    
-  }
-  
-  .icon:hover {
-    fill: #03a9f4;
-  }
+    height: 64px;
+    margin: 24px;
+}
+
+.logo-block {
+    display: flex;
+    flex-direction: column;
+    max-width: 264px;
+}
+
+.social-midia-block {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin-top: 12px;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.footer-block {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.social-link{
+    display: flex;
+    width: 40px;
+    height: 40px; 
+    background-color: #4D5AE5;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: background-color 150ms ease-in-out 150ms
+}
+
+.social-icon {
+    width: 16px;
+    height: 16px; 
+}
+
+.social-link:hover {
+    background-color: #31D0AA;
+}
+
+.social-header {
+    color: #FFFFFF;
+}
+
+.footer-social-blick {
+    width: 208px;
+}
