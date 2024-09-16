@@ -65,6 +65,9 @@ img {
 
 .header-block {
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 
+        0px 1px 1px rgba(46, 47, 66, 0.16), 
+        0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-nav {
@@ -166,6 +169,7 @@ img {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    max-width: 1440px;
 }
 
 
@@ -192,7 +196,8 @@ img {
     border-radius: 4px;
     min-width: 169px;
     border: none;
-    height: 56px
+    height: 56px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .service-button:hover {
