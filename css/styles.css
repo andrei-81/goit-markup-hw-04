@@ -28,6 +28,7 @@ img {
     display: flex;
     flex-direction: column;
     flex-basis: 1158px;
+    align-items: center;
 }
 
 .container {
@@ -82,12 +83,17 @@ img {
     gap: 40px;
 }
 
+.header-nav-menu:first-child {
+    position: relative;
+    color: #404bbf;
+}
+
 .header-nav-element {
     position: relative;
     color: #404bbf;
 }
 
-.header-nav-element::after {
+.header-nav-element:first-child::after {
     content: '';
     width: 100%;
     position: absolute;
@@ -145,6 +151,10 @@ img {
     color: #434455;
 }
 
+.header-addr-element {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 
 .link{
     font-size: 16px;
@@ -188,6 +198,7 @@ img {
     background-position: center center;
     background-size: cover;
     max-width: 1440px;
+    align-items: center;
 }
 
 
@@ -245,6 +256,13 @@ img {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+.second-section-container {
+    display: flex;
+    justify-content: center; 
+    border-radius: 4px;
+    margin-bottom: 8px;
 }
 
 .about-us-list{
@@ -491,7 +509,20 @@ img {
     justify-content: center;
     align-items: center;
     text-align: center;
-    transition: background-color 150ms ease-in-out 150ms
+    transition: background-color 150ms ease-in-out 150ms;
+}
+
+
+.social-link-footer{
+    display: flex;
+    width: 40px;
+    height: 40px; 
+    background-color: #4D5AE5;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icon {
@@ -499,7 +530,8 @@ img {
     height: 16px; 
 }
 
-.social-link:hover {
+.social-link:hover, 
+.social-link-footer:hover {
     background-color: #31D0AA;
 }
 
