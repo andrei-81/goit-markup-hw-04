@@ -94,6 +94,10 @@ img {
     color: #404bbf;
 }
 
+.header-nav-menu:first-child .header-nav-link {
+    color: #404bbf;
+}
+
 .header-nav-element {
     position: relative;
     color: #404bbf;
