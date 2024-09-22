@@ -1,5 +1,5 @@
 :root {
-    --icon-color: f4f4fd;
+    --icon-color: #f4f4fd;
 }
 
 body {
@@ -540,7 +540,8 @@ img {
 }
 
 .social-link:hover, 
-.social-ling:focus {
+.social-ling:focus,
+.social-ling:active {
     background-color: #404bbf;
 }
 
