@@ -99,7 +99,7 @@ img {
     color: #404bbf;
 }
 
-.header-nav-element::after {
+.first-link-header-menu::after {
     content: '';
     width: 100% ;
     position: absolute; 
