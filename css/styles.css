@@ -463,14 +463,22 @@ img {
 }
 
 .icon-container {
+    display: flex;
     background-color: #F4F4FD;
     border-color: #8E8F99;
     border-style: solid;
     border-width: 1px;
-    border-radius: 5px;
+    border-radius: 4px;
     text-align: center;
     align-items: center;
+    justify-content: center;
     height: 112px;
+    margin-bottom: 8px; 
+}
+
+.icon-container .svg {
+    width: 64px;
+    height: 64px;
 }
 
 .icon {
