@@ -83,7 +83,7 @@ img {
     gap: 40px;
 }
 
-.header-nav-menu:first-child {
+.header-nav-menu:first-child .header-nav-link {
     position: relative;
     color: #404bbf;
 }
